@@ -1,0 +1,91 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+main header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid orange;
+  margin: 5px;
+  padding: 20px 0;
+}
+
+main header div p {
+  font-size: 18px;
+}
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  position: relative;
+}
+
+main .container .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .container .info-container .image-container {
+  visibility: hidden;
+  border: 2px solid orange;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  visibility: visible !important;
+  display: flex;
+}
+
+main .container .image-container img {
+  width: 15rem;
+}
+
+main .container .info-container .image-container button {
+  margin: 10px;
+  background: cornflowerblue;
+  border: none;
+  padding: 5px 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main .container .info-container .btn-container {
+  margin-top: 15px;
+}
+
+main .container .info-container .btn-container button {
+  background: none;
+  border: 2px solid orange;
+  padding: 10px 80px;
+  font-size: 20px;
+  cursor: pointer;
+}

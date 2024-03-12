@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script>
+        const showImage = id => {
+        document.getElementById(id).classList.add("show");
+      };
+      const hideImage = id => {
+        document.getElementById(id).classList.remove("show");
+      }
+    </script>
+    <title>ABC's of CSS</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p>
+            Welcome to the Interactive ABCs of CSS Technology learning Website.
+          </p>
+        </div>
+        <div>
+          <p>
+            Click on the buttons below to reveal and learn the CSS technology
+            features of the corresponding letters.
+          </p>
+        </div>
+      </header>
+      <section class="container">
+        <div class="info-container">
+          <div class="image-container" id="A">
+            <img src="./assets/images/css-letter-a.png" alt="aspect-ratio" />
+            <button class="hide-btn" onclick="hideImage('A')">Hide Result</button>
+          </div>
+          <div class="btn-container">
+            <button class="show-btn" onclick="showImage('A')">A</button>
+          </div>
+        </div>
+        <div class="info-container">
+          <div class="image-container" id="B">
+            <img src="./assets/images/css-letter-b.png" alt="border" />
+            <button class="hide-btn" onclick="hideImage('B')">Hide Result</button>
+          </div>
+          <div class="btn-container">
+            <button class="show-btn" onclick="showImage('B')">B</button>
+          </div>
+        </div>
+        <div class="info-container">
+          <div class="image-container" id="C">
+            <img src="./assets/images/css-letter-c.png" alt="colors" />
+            <button class="hide-btn" onclick="hideImage('C')">Hide Result</button>
+          </div>
+          <div class="btn-container">
+            <button class="show-btn" onclick="showImage('C')">C</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
